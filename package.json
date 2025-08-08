@@ -1,0 +1,33 @@
+{
+  "name": "Chemwatch",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^2.0.3",
+    "@sap/cds": "^9.1.0",
+    "express": "^4",
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "postgres",
+        "model": "db"
+        
+      }
+    }
+  }
+}
